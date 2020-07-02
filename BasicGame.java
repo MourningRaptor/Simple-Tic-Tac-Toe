@@ -50,7 +50,6 @@ public class BasicGame {
     private boolean checkRowsForWin(){
         for(int i = 0; i < 3; i++){
             if(checkRowCol(board[i][0], board[i][1], board[i][2])){
-                System.out.print("ROWS WIN");
                 return true;
             }
         }
@@ -60,7 +59,6 @@ public class BasicGame {
     private boolean checkColumnsForWin(){
         for(int j = 0; j < 3; j++){
             if(checkRowCol(board[0][j], board[1][j], board[2][j])){
-                System.out.print("COLS WIN");
                 return true;
             }
         }
@@ -69,13 +67,9 @@ public class BasicGame {
 
     private boolean checkDiagnolsForWin(){
             if(checkRowCol(board[0][0], board[1][1], board[2][2])){
-                System.out.print("DIAG1 WIN");
-
                 return true;
             }
             else if(checkRowCol(board[0][2], board[1][1], board[2][0])){
-                System.out.print("DIAG2 WIN");
-
                 return true;
             }
         
