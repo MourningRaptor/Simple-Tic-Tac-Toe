@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tester{
+public class PlayGame{
     public static void main(String args []){
         int moves = 0;
         Scanner scan = new Scanner(System.in);
