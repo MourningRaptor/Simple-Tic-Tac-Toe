@@ -1,3 +1,11 @@
+/*Hunter Moore
+7/3/20
+Most basic iteration of Tic Tac Toe. Standard rules in play.
+*/
+
+//import java.util.InputMismatchException;
+//import java.util.Scanner;
+
 public class BasicGame {
     private Character[][] board = new Character[3][3];
     private char currentPlayerMark = 'x';
@@ -99,8 +107,28 @@ public class BasicGame {
             return true;
         }
         return false;
-
     }
+
+   /* public boolean getInput() throws InputMismatchException, ArrayIndexOutOfBoundsException{
+        try{
+            Scanner scan = new Scanner(System.in);
+            int row;
+            int col;
+            row = scan.nextInt() - 1;
+            col = scan.nextInt() - 1;
+        }
+            catch(Exception InputMismatchException){
+                System.out.println("Please enter integer between 1-3.");
+                return false;
+            }
+           // catch(Exception arrayIndexOutOfBoundsException){
+            //    System.out.print("Please enter integer between 1-3.");
+            //}
+        //scan.close();
+        return true;
+
+            }*/
+
     public char getCurrentPlayerMarker(){
         return currentPlayerMark;
     }
